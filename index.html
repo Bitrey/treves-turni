@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Turni</title>
+
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+        />
+
+        <style>
+            article {
+                margin-top: 0.8rem;
+            }
+        </style>
+    </head>
+    <body>
+        <main class="container">
+            <nav>
+                <h1 style="margin-bottom: 0"><strong>Turni</strong></h1>
+                <aside>
+                    <ul>
+                        <li>
+                            <a
+                                id="date"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                                aria-busy="true"
+                                style="float: right"
+                            ></a>
+                        </li>
+                        <li>
+                            <p id="week" style="float: right" aria-busy="true"></p>
+                        </li>
+                    </ul>
+                </aside>
+            </nav>
+
+            <div class="grid">
+                <article>
+                    <header>Salotto</header>
+                    <div class="turn_div" id="turn_living_room"><progress></progress></div>
+                </article>
+                <article>
+                    <header>Cucina</header>
+                    <div class="turn_div" id="turn_kitchen"><progress></progress></div>
+                </article>
+                <article>
+                    <header>Cesso</header>
+                    <div class="turn_div" id="turn_cess"><progress></progress></div>
+                </article>
+            </div>
+
+            <details>
+                <summary>Dettagli</summary>
+
+                <object
+                    data="/public/Dettagli.pdf"
+                    type="application/pdf"
+                    width="100%"
+                    height="500px"
+                >
+                    <p>Qua <a href="/public/Dettagli.pdf">come funziona</a>.</p>
+                </object>
+            </details>
+        </main>
+
+        <script src="/public/index.js"></script>
+    </body>
+</html>
