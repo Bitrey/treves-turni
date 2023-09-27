@@ -23,7 +23,7 @@ class MsgHandler {
     }
 
     async setMsgs(msgs: Message[]): Promise<void> {
-        await writeFile(MsgHandler.msgsFilePath, JSON.stringify(msgs));
+        await writeFile(MsgHandler.msgsFilePath, JSON.stringify(msgs, null, 2));
     }
 
     async addMsg(msg: NewMessage): Promise<void> {
