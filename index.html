@@ -14,6 +14,12 @@
             article {
                 margin-top: 0.8rem;
             }
+
+            #chat {
+                height: 200px;
+                overflow-y: scroll;
+                scroll-behavior: smooth;
+            }
         </style>
     </head>
     <body>
@@ -53,6 +59,39 @@
                     <div class="turn_div" id="turn_cess"><progress></progress></div>
                 </article>
             </div>
+
+            <details open>
+                <summary>Chat</summary>
+
+                <div id="chat">
+                    <progress></progress>
+                </div>
+
+                <form id="write-msg">
+                    <div class="grid">
+                        <label for="author">
+                            Chi sei?
+
+                            <select id="author" name="author">
+                                <option value="a">a</option>
+                                <option value="sa" selected>sa</option>
+                                <option value="lu">lu</option>
+                            </select>
+                        </label>
+
+                        <label for="msg-input">
+                            Messaggio
+                            <input
+                                type="text"
+                                id="msg-input"
+                                name="msg-input"
+                                placeholder="aaaaa"
+                                required
+                            />
+                        </label>
+                    </div>
+                </form>
+            </details>
 
             <details>
                 <summary>Dettagli</summary>
