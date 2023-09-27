@@ -71,7 +71,7 @@ function disableForm() {
 }
 
 function websocket() {
-    socket = new WebSocket("ws://" + location.host + "/ws");
+    socket = new WebSocket("wss://" + location.host + "/ws");
 
     socket.addEventListener("open", function (event) {
         socket.send(
